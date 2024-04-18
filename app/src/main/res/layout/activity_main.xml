@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/headerTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF5722"
+        android:padding="20dp"
+        android:text="Users DataBase"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/cedulaEditText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="5dp"
+        android:layout_marginTop="5dp"
+        android:hint="Cédula"/>
+
+    <EditText
+        android:id="@+id/nombreEditText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="5dp"
+        android:hint="Nombre"/>
+
+    <EditText
+        android:id="@+id/telefonoEditText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="5dp"
+        android:hint="Teléfono"/>
+
+    <EditText
+        android:id="@+id/solicitudEditText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Solicitud"
+        android:padding="5dp"
+        android:layout_marginBottom="40dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:padding="4dp">
+
+    <Button
+        android:id="@+id/registrarButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:backgroundTint="#FF5722"
+        android:textColor="@android:color/white"
+        android:text="Registrar usuario"
+        android:textSize="15sp"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/consultarButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:backgroundTint="#FF5722"
+        android:textColor="@android:color/white"
+        android:text="Consultar por cédula"
+        android:textSize="15sp"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/verTodosButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:backgroundTint="#FF5722"
+        android:textColor="@android:color/white"
+        android:text="Ver registros"
+        android:textSize="15sp"
+        android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/espacio"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp">
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="155dp"
+        android:src="@drawable/bd_logo" />
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_below="@id/espacio"
+        android:layout_marginBottom="30dp"
+        android:padding="5dp">
+
+        <Button
+        android:id="@+id/btnEliminarTodos"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:backgroundTint="#FF5722"
+        android:textColor="@android:color/white"
+        android:text="Eliminar todos los datos"
+        android:textSize="15sp"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/botonBorrarPorCedula"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:backgroundTint="#FF5722"
+        android:textColor="@android:color/white"
+        android:text="Eliminar datos por cédula"
+        android:textSize="15sp"
+        android:layout_gravity="center" />
+
+    </LinearLayout>
+
+</LinearLayout>

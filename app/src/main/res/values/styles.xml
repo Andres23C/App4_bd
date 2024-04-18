@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="App4BD" parent="Theme.App4_bd">
+        <item name="colorPrimary">@color/naranja</item>
+        <item name="colorPrimaryDark">#0343FF</item>
+        <item name="colorAccent">#0239DA</item>
+    </style>
+</resources>
